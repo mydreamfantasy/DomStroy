@@ -1,0 +1,38 @@
+.contacts {
+  font-family: $inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $black-color;
+
+  p {
+    margin: 0;
+  }
+}
+
+.contacts__email {
+  padding-bottom: 18px;
+
+  a {
+    color: $menu-text;
+  }
+}
+
+.contacts__work-hours {
+  padding-bottom: 18px;
+}
+
+.contacts__tel {
+  display: flex;
+  padding-bottom: 22px;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.contacts__tel-number {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  color: $menu-text;
+}
