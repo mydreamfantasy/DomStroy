@@ -98,32 +98,67 @@
     </div>
   </header>
   <main class="main container">
-    <section class="main-poster main__wrapper">
+    <section class="main-poster main__wrapper--poster">
       <div class="container-content">
         <h1 class="main-poster__title">Строительство дачных домов и коттеджей</h1>
         <p class="main-poster__text">На участок поставляются готовые модули, производится их монтаж в короткие сроки. Мы
           гарантируем выполнение всех взятых на себя обязательств и доступные цены.</p>
-
         <div class="main-poster__image-wrapper image-wrapper">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 1440px)"
-              srcset="img/poster/desktop-jar.webp 1x, img/poster/desktop-jar@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/poster/tablet-jar.webp 1x, img/poster/tablet-jar@2x.webp 2x">
-            <source type="image/webp" srcset="img/poster/mobile-jar.webp 1x, img/poster/mobile-jar@2x.webp 2x">
-            <source media=" (min-width: 1440px)"
-              srcset="img/poster/desktop-jar.png 1x, img/poster/desktop-jar@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/poster/tablet-jar.png 1x, img/poster/tablet-jar@2x.png 2x"> -->
-            <img class="main-poster__image" src="img/posters/poster-mobile.png" alt="Дом, построенный нами."
-              srcset="img/posters/poster-mobile@2x.png 2x" width="495" height="709">
-          </picture>
+          <img class="main-poster__image" src="img/posters/poster-mobile.png" alt="Дом, построенный нами."
+            srcset="img/posters/poster-mobile@2x.png 2x" width="495" height="709">
         </div>
         <div class="main-poster__button-wrapper"><a href="form.html" class="main-poster__link button">
-            <span class="main-poster__text button__text"> Подобрать программу</span>
+            <span class="main-poster__button button__text">Рассчитать стоимость</span>
           </a>
         </div>
       </div>
-
+    </section>
+    <section class="main-offers main__wrapper--offers">
+      <h2 class="main-offers__title title">
+        Предложения для вас
+      </h2>
+      <form class="main-offers__form" action="#" autocomplete="off">
+        <fieldset id="houses" class="main-offers__form-houses offers-radio-button">
+          <legend class="visually-hidden">Выбор дома</legend>
+          <ul class="offers-radio-button__list reset-list">
+            <li class="offers-radio-button__item reset-item">
+              <label class="offers-radio-button__control">
+                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
+                  value="true" checked /><span class="offers-radio-button__control-mark"></span>
+                <span class="offers-radio-button__control-program">Каркасные дома</span>
+              </label>
+            </li>
+            <li class="offers-radio-button__item reset-item">
+              <label class="offers-radio-button__control">
+                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
+                  value="true" /><span class="offers-radio-button__control-mark"></span>
+                <span class="offers-radio-button__control-program">Бани</span>
+              </label>
+            </li>
+            <li class="offers-radio-button__item reset-item">
+              <label class="offers-radio-button__control">
+                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
+                  value="true" /><span class="offers-radio-button__control-mark"></span>
+                <span class="offers-radio-button__control-program">Беседки</span>
+              </label>
+            </li>
+            <li class="offers-radio-button__item reset-item">
+              <label class="offers-radio-button__control">
+                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
+                  value="true" /><span class="offers-radio-button__control-mark"></span>
+                <span class="offers-radio-button__control-program">Бытовки</span>
+              </label>
+            </li>
+            <li class="offers-radio-button__item reset-item">
+              <label class="offers-radio-button__control">
+                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
+                  value="true" /><span class="offers-radio-button__control-mark"></span>
+                <span class="offers-radio-button__control-program">Хоз. постройки</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
     </section>
   </main>
 
