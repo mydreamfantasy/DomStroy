@@ -1,0 +1,61 @@
+.main-poster__title,
+.main-poster__text,
+.main-poster__button {
+  color: $white-color;
+}
+
+.main-poster__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.main-poster__text {
+  font-family: $montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 0.8;
+}
+
+.main-poster__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: $black-color;
+}
+
+.main-poster__image {
+  opacity: 0.35;
+}
+
+.main-poster__button-wrapper {
+  margin-top: 148px;
+  position: relative;
+}
+
+.main-poster__link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 57px;
+    height: 57px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.main-poster__button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
