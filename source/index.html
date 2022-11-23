@@ -117,48 +117,196 @@
       <h2 class="main-offers__title title">
         Предложения для вас
       </h2>
-      <form class="main-offers__form" action="#" autocomplete="off">
-        <fieldset id="houses" class="main-offers__form-houses offers-radio-button">
-          <legend class="visually-hidden">Выбор дома</legend>
-          <ul class="offers-radio-button__list reset-list">
-            <li class="offers-radio-button__item reset-item">
-              <label class="offers-radio-button__control">
-                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
-                  value="true" checked /><span class="offers-radio-button__control-mark"></span>
-                <span class="offers-radio-button__control-program">Каркасные дома</span>
-              </label>
-            </li>
-            <li class="offers-radio-button__item reset-item">
-              <label class="offers-radio-button__control">
-                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
-                  value="true" /><span class="offers-radio-button__control-mark"></span>
-                <span class="offers-radio-button__control-program">Бани</span>
-              </label>
-            </li>
-            <li class="offers-radio-button__item reset-item">
-              <label class="offers-radio-button__control">
-                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
-                  value="true" /><span class="offers-radio-button__control-mark"></span>
-                <span class="offers-radio-button__control-program">Беседки</span>
-              </label>
-            </li>
-            <li class="offers-radio-button__item reset-item">
-              <label class="offers-radio-button__control">
-                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
-                  value="true" /><span class="offers-radio-button__control-mark"></span>
-                <span class="offers-radio-button__control-program">Бытовки</span>
-              </label>
-            </li>
-            <li class="offers-radio-button__item reset-item">
-              <label class="offers-radio-button__control">
-                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
-                  value="true" /><span class="offers-radio-button__control-mark"></span>
-                <span class="offers-radio-button__control-program">Хоз. постройки</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-      </form>
+      <div class="main-offers__form-houses offers-radio-button">
+        <ul class="offers-radio-button__list reset-list">
+          <li class="offers-radio-button__item reset-item">
+            <input class="offers-radio-button__control-input" id="frame" type="radio" name="house-group" value="true"
+              checked />
+            <div class="offers-radio-button__container">
+              <label class="offers-radio-button__control-program" for="frame">Каркасные дома</label>
+            </div>
+          </li>
+          <li class="offers-radio-button__item reset-item">
+            <input class="offers-radio-button__control-input" id="frame" type="radio" name="house-group" value="true" />
+            <div class="offers-radio-button__container">
+              <label class="offers-radio-button__control-program" for="frame">Бани</label>
+            </div>
+          </li>
+          <li class="offers-radio-button__item reset-item">
+            <input class="offers-radio-button__control-input" id="frame" type="radio" name="house-group" value="true" />
+            <div class="offers-radio-button__container">
+              <label class="offers-radio-button__control-program" for="frame">Беседки</label>
+            </div>
+          </li>
+          <li class="offers-radio-button__item reset-item">
+            <input class="offers-radio-button__control-input" id="frame" type="radio" name="house-group" value="true">
+            <div class="offers-radio-button__container">
+              <label class="offers-radio-button__control-program" for="frame">Бытовки</label>
+            </div>
+          </li>
+          <li class="offers-radio-button__item reset-item">
+            <input class="offers-radio-button__control-input" id="frame" type="radio" name="house-group" value="true" />
+            <div class="offers-radio-button__container">
+              <label class="offers-radio-button__control-program" for="frame">Хоз. постройки</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="main-swiper-house swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-slide__card card-house">
+              <a class="card-house__link" href="#">
+                <img class="card-house__image" src="img/houses-card/first-house.png" alt="Дом 4*6"
+                  srcset="img/houses-card/first-house@2x.png 2x" width="285" height="175">
+                <h3 class="card-house__title">Каркасный дом с балконом LK-2</h3>
+                <div class="card-house__info">
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Размер:
+                    </span>
+                    <span class="card-house__cell">
+                      4х6 м
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Площадь:
+                    </span>
+                    <span class="card-house__cell">
+                      34.8 м <sup>2</sup>
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Количество комнат
+                    </span>
+                    <span class="card-house__cell">
+                      3 шт
+                    </span>
+                  </p>
+                </div>
+                <p class="card-house__price">
+                  от 940 000 ₽
+                </p>
+              </a>
+
+            </div>
+            <div class="swiper-slide__card card-house">
+              <a class="card-house__link" href="#">
+                <img class="card-house__image" src="img/houses-card/first-house.png" alt="Дом 4*6"
+                  srcset="img/houses-card/first-house@2x.png 2x" width="285" height="175">
+                <h3 class="card-house__title">Каркасный дом с балконом LK-2</h3>
+                <div class="card-house__info">
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Размер:
+                    </span>
+                    <span class="card-house__cell">
+                      4х6 м
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Площадь:
+                    </span>
+                    <span class="card-house__cell">
+                      34.8 м <sup>2</sup>
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Количество комнат
+                    </span>
+                    <span class="card-house__cell">
+                      3 шт
+                    </span>
+                  </p>
+                </div>
+                <p class="card-house__price">
+                  от 940 000 ₽
+                </p>
+              </a>
+
+            </div>
+            <div class="swiper-slide__card card-house">
+              <a class="card-house__link" href="#">
+                <img class="card-house__image" src="img/houses-card/first-house.png" alt="Дом 4*6"
+                  srcset="img/houses-card/first-house@2x.png 2x" width="285" height="175">
+                <h3 class="card-house__title">Каркасный дом с балконом LK-2</h3>
+                <div class="card-house__info">
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Размер:
+                    </span>
+                    <span class="card-house__cell">
+                      4х6 м
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Площадь:
+                    </span>
+                    <span class="card-house__cell">
+                      34.8 м <sup>2</sup>
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Количество комнат
+                    </span>
+                    <span class="card-house__cell">
+                      3 шт
+                    </span>
+                  </p>
+                </div>
+                <p class="card-house__price">
+                  от 940 000 ₽
+                </p>
+              </a>
+
+            </div>
+            <div class="swiper-slide__card card-house">
+              <a class="card-house__link" href="#">
+                <img class="card-house__image" src="img/houses-card/first-house.png" alt="Дом 4*6"
+                  srcset="img/houses-card/first-house@2x.png 2x" width="285" height="175">
+                <h3 class="card-house__title">Каркасный дом с балконом LK-2</h3>
+                <div class="card-house__info">
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Размер:
+                    </span>
+                    <span class="card-house__cell">
+                      4х6 м
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Площадь:
+                    </span>
+                    <span class="card-house__cell">
+                      34.8 м <sup>2</sup>
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Количество комнат
+                    </span>
+                    <span class="card-house__cell">
+                      3 шт
+                    </span>
+                  </p>
+                </div>
+                <p class="card-house__price">
+                  от 940 000 ₽
+                </p>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
   </main>
 

@@ -1,0 +1,45 @@
+
+.card-house {
+  width: 285px;
+  height: 417px;
+  box-shadow: 3px 4px 33px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.card-house__link {
+  display: block;
+  text-decoration: none;
+}
+
+.card-house__title {
+  margin: 18px 20px 25px 21px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: $black-color;
+}
+
+.card-house__info {
+  margin: 0 20px 25px 21px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.card-house__string {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-house__cell {
+  text-align: end;
+}
+
+.card-house__price {
+  margin: 0 auto 35px 21px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: $black-color;
+}
