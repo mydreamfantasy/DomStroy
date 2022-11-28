@@ -1,0 +1,52 @@
+.main-mortgage {
+  position: relative;
+  padding-bottom: 547px;
+}
+
+.mortgage__text {
+  padding: 91px 28px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black-color;
+}
+
+.mortgage__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(241, 241, 246, 0.5);
+}
+
+.mortgage__image {
+  display: block;
+  margin: 0;
+  padding: 0;
+  opacity: 0.35;
+}
+
+
+.mortgage__link {
+  display: inline-block;
+  position: absolute;
+  bottom: 167px;
+  right: 26px;
+  width: 135px;
+  height: 135px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid $request;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mortgage__button {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 37%;
+  color: $menu-text;
+}
