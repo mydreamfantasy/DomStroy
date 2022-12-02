@@ -1,6 +1,6 @@
 .main-mortgage {
   position: relative;
-  padding-bottom: 547px;
+  padding-bottom: 508px;
 }
 
 .mortgage__text {
@@ -27,26 +27,9 @@
   opacity: 0.35;
 }
 
-
 .mortgage__link {
   display: inline-block;
   position: absolute;
   bottom: 167px;
   right: 26px;
-  width: 135px;
-  height: 135px;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid $request;
-  border-radius: 50%;
-  text-align: center;
-  text-decoration: none;
-}
-
-.mortgage__button {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  padding-top: 37%;
-  color: $menu-text;
 }

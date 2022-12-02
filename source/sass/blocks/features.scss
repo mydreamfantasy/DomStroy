@@ -22,7 +22,7 @@
 
 .features__container {
   margin-top: 43px;
-  padding-bottom: 162px;
+  // padding-bottom: 162px;
   display: flex;
 }
 
@@ -68,6 +68,33 @@
   line-height: 15px;
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
+}
+
+.features__pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 127px;
+  padding-bottom: 92px;
+}
+
+.features__pagination-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.features__pagination-prev {
+  background: no-repeat url("../img/features/arrow.svg");
+}
+
+.features__pagination-next {
+  background: no-repeat url("../img/features/arrow.svg");
+  transform: rotate(180deg);
 }
 
 .features__vk {
