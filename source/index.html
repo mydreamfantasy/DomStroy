@@ -13,6 +13,7 @@
   <link rel="preload" href="fonts/inter-regular.woff2" as="font">
   <link rel="preload" href="fonts/inter-700.woff2" as="font">
   <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body class="page-body">
@@ -117,54 +118,587 @@
       <h2 class="main-offers__title title">
         Предложения для вас
       </h2>
-      <form class="main-offers__form" action="#" autocomplete="off">
-        <fieldset id="houses" class="main-offers__form-houses offers-radio-button">
-          <legend class="visually-hidden">Выбор дома</legend>
-          <ul class="offers-radio-button__list reset-list">
-            <li class="offers-radio-button__item reset-item">
-              <label class="offers-radio-button__control">
-                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
-                  value="true" checked /><span class="offers-radio-button__control-mark"></span>
-                <span class="offers-radio-button__control-program">Каркасные дома</span>
-              </label>
+      <div class="main-offers__form-houses offers-radio-button">
+        <ul class="offers-radio-button__list reset-list">
+          <li class="offers-radio-button__item reset-item">
+            <input class="offers-radio-button__control-input" id="frame" type="radio" name="house-group" value="true"
+              checked />
+            <div class="offers-radio-button__container">
+              <label class="offers-radio-button__control-program" for="frame">Каркасные дома</label>
+            </div>
+          </li>
+          <li class="offers-radio-button__item reset-item">
+            <input class="offers-radio-button__control-input" id="frame" type="radio" name="house-group" value="true" />
+            <div class="offers-radio-button__container">
+              <label class="offers-radio-button__control-program" for="frame">Бани</label>
+            </div>
+          </li>
+          <li class="offers-radio-button__item reset-item">
+            <input class="offers-radio-button__control-input" id="frame" type="radio" name="house-group" value="true" />
+            <div class="offers-radio-button__container">
+              <label class="offers-radio-button__control-program" for="frame">Беседки</label>
+            </div>
+          </li>
+          <li class="offers-radio-button__item reset-item">
+            <input class="offers-radio-button__control-input" id="frame" type="radio" name="house-group" value="true">
+            <div class="offers-radio-button__container">
+              <label class="offers-radio-button__control-program" for="frame">Бытовки</label>
+            </div>
+          </li>
+          <li class="offers-radio-button__item reset-item">
+            <input class="offers-radio-button__control-input" id="frame" type="radio" name="house-group" value="true" />
+            <div class="offers-radio-button__container">
+              <label class="offers-radio-button__control-program" for="frame">Хоз. постройки</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="main-swiper-house swiper-first">
+        <div class="swiper-wrapper main-swiper-house__wrapper">
+          <div class="swiper-slide">
+            <div class="card-house">
+              <a class="card-house__link" href="#">
+                <img class="card-house__image" src="img/houses-card/first-house.png" alt="Дом 4*6"
+                  srcset="img/houses-card/first-house@2x.png 2x" width="285" height="175">
+                <h3 class="card-house__title">Каркасный дом с балконом LK-2</h3>
+                <div class="card-house__info">
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Размер:
+                    </span>
+                    <span class="card-house__cell">
+                      4х6 м
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Площадь:
+                    </span>
+                    <span class="card-house__cell">
+                      34.8 м <sup>2</sup>
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Количество комнат
+                    </span>
+                    <span class="card-house__cell">
+                      3 шт
+                    </span>
+                  </p>
+                </div>
+                <p class="card-house__price">
+                  от 940 000 ₽
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-house">
+              <a class="card-house__link" href="#">
+                <img class="card-house__image" src="img/houses-card/first-house.png" alt="Дом 4*6"
+                  srcset="img/houses-card/first-house@2x.png 2x" width="285" height="175">
+                <h3 class="card-house__title">Каркасный дом с балконом LK-2</h3>
+                <div class="card-house__info">
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Размер:
+                    </span>
+                    <span class="card-house__cell">
+                      4х6 м
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Площадь:
+                    </span>
+                    <span class="card-house__cell">
+                      34.8 м <sup>2</sup>
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Количество комнат
+                    </span>
+                    <span class="card-house__cell">
+                      3 шт
+                    </span>
+                  </p>
+                </div>
+                <p class="card-house__price">
+                  от 940 000 ₽
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-house">
+              <a class="card-house__link" href="#">
+                <img class="card-house__image" src="img/houses-card/first-house.png" alt="Дом 4*6"
+                  srcset="img/houses-card/first-house@2x.png 2x" width="285" height="175">
+                <h3 class="card-house__title">Каркасный дом с балконом LK-2</h3>
+                <div class="card-house__info">
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Размер:
+                    </span>
+                    <span class="card-house__cell">
+                      4х6 м
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Площадь:
+                    </span>
+                    <span class="card-house__cell">
+                      34.8 м <sup>2</sup>
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Количество комнат
+                    </span>
+                    <span class="card-house__cell">
+                      3 шт
+                    </span>
+                  </p>
+                </div>
+                <p class="card-house__price">
+                  от 940 000 ₽
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-house">
+              <a class="card-house__link" href="#">
+                <img class="card-house__image" src="img/houses-card/first-house.png" alt="Дом 4*6"
+                  srcset="img/houses-card/first-house@2x.png 2x" width="285" height="175">
+                <h3 class="card-house__title">Каркасный дом с балконом LK-2</h3>
+                <div class="card-house__info">
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Размер:
+                    </span>
+                    <span class="card-house__cell">
+                      4х6 м
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Площадь:
+                    </span>
+                    <span class="card-house__cell">
+                      34.8 м <sup>2</sup>
+                    </span>
+                  </p>
+                  <p class="card-house__string">
+                    <span class="card-house__cell">
+                      Количество комнат
+                    </span>
+                    <span class="card-house__cell">
+                      3 шт
+                    </span>
+                  </p>
+                </div>
+                <p class="card-house__price">
+                  от 940 000 ₽
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="main-offer__wrapper-button">
+        <a class="main-offers__link all-button" href="catalog.html">Смотреть все проекты</a>
+      </div>
+
+    </section>
+    <section class="main-mortgage mortgage">
+      <div class="container-content">
+        <p class="mortgage__text">Мы работаем с <b>материнским капиталом!</b> </p>
+        <div class="mortgage__image-wrapper">
+          <img class="mortgage__image" src="img/mortgage/mortgage.png" alt="Дом, построенный нами."
+            srcset="img/mortgage/mortgage@2x.png 2x" width="448" height="795">
+        </div>
+        <div class="mortgage__button-wrapper circle-button">
+          <a href="form-callback.html" class="mortgage__link circle-button__link">
+            <span class="mortgage__button circle-button__text">Оставить <br> заявку</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="main-features features">
+      <h3 class="features__title">Наши преимущества</h3>
+      <div class="feature__wrapper swiper-second">
+        <div class="features__container swiper-wrapper">
+          <div class="swiper-slide">
+            <ul class="features__list reset-list">
+              <li class="features__item reset-item">
+                <img class="features__img" src="./img/features/certificate.png" alt="Договор" width="100" height="100">
+                <h4 class="features__title features__title--little">Работаем строго по договору</h4>
+                <p class="features__descrube">Стоимость строительсва фиксированная.
+                  И все наши обязательства прописаны в договоре.
+                </p>
+              </li>
+              <li class="features__item reset-item">
+                <img class="features__img" src="./img/features/money-sack.png" alt="Честная цена" width="100"
+                  height="100">
+                <h4 class="features__title features__title--little">Честная цена и понятные условия</h4>
+                <p class="features__descrube">Поэтапная оплата. Нет скрытых платежей и мелких шрифтов.
+                </p>
+              </li>
+              <li class="features__item reset-item">
+                <img class="features__img" src="./img/features/running-man.png" alt="Фотоотчет" width="100"
+                  height="100">
+                <h4 class="features__title features__title--little">Фотоотчет процесса строительства</h4>
+                <p class="features__descrube">Бесплатный фото или видео отчет
+                  (по договорённости)
+                </p>
+              </li>
+              <li class="features__item reset-item">
+                <img class="features__img" src="./img/features/certificate-second.png" alt="7 лет опыта" width="100"
+                  height="100">
+                <h4 class="features__title features__title--little">Более 7 лет опыта</h4>
+                <p class="features__descrube">Современное и качественное строительство, опытными бригадами.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <ul class="features__list reset-list">
+              <li class="features__item reset-item">
+                <img class="features__img" src="./img/features/badge.png" alt="Бейдж" width="100" height="100">
+                <h4 class="features__title features__title--little">Выставка и собственное производство</h4>
+                <p class="features__descrube">Лучшее соотношение цены и качества. К нам возвращаются наши клиенты и
+                  рекомендуют своим знакомым.
+                </p>
+              </li>
+              <li class="features__item reset-item">
+                <img class="features__img" src="./img/features/goal.png" alt="Горы" width="100" height="100">
+                <h4 class="features__title features__title--little">Экологически чистый материал</h4>
+                <p class="features__descrube">Сертифицированные, экологичные материалы от проверенных поставщиков.
+                </p>
+              </li>
+              <li class="features__item reset-item">
+                <img class="features__img" src="./img/features/receipt.png" alt="Гарантии" width="100" height="100">
+                <h4 class="features__title features__title--little">Гарантийное обслуживание любой постройки</h4>
+                <p class="features__descrube">Даем гарантию не на словах.
+                </p>
+              </li>
+              <li class="features__item reset-item">
+                <img class="features__img" src="./img/features/quality.png" alt="Качество" width="100" height="100">
+                <h4 class="features__title features__title--little">Индивидуальные проекты</h4>
+                <p class="features__descrube">Возможны изменения проектов из каталога и строительство по индивидуальным
+                  планам.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="features__pagination">
+          <button class="features__pagination-button features__pagination-prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="features__pagination-button features__pagination-next" type="button">
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
+        </div>
+      </div>
+
+      <section class="features__vk">
+        <h3 class="features__vk-title">
+          <strong>Хотите узнавать</strong> о строящихся объектах, акциях и спецпредложениях?
+        </h3>
+        <p class="features__vk-paragraph">
+          Подпишитесь на нашу группу ВКонтакте и узнавайте свежие новости и полезную информацию раньше всех!
+        </p>
+        <a class="features__vk-link all-button" href="#">
+          Подписаться на группу ВКонтакте
+        </a>
+
+      </section>
+    </section>
+    <section class="personal-house main-personal">
+      <h3 class="personal-house__title">Планируете построить <strong>индивидуальное строение? Свяжитесь с нами.</strong>
+      </h3>
+      <p class="personal-house__text">Хотите постройку в современном минималистичном стиле, но ни один из типовых
+        проектов Вам не подходит?
+        Выход есть!
+      </p>
+      <p class="personal-house__text">
+        Свяжитесь с нами и мы реализуем задуманное. </p>
+      <div class="personal-house__wrapper circle-button">
+        <a class="personal-house__link circle-button__link" href="#">
+          <span class="personal-house__button circle-button__text">Связаться <br> с нами</span>
+        </a>
+      </div>
+    </section>
+    <section class="review main-review">
+      <div class="swiper-third">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review__wrapper">
+              <h3 class="review__title">Отзывы</h3>
+              <h4 class="review__name">Джон Джон Джон</h4>
+              <img class="review__stars" src="img/review/five-stars.png" alt="5 звезд" width="70" height="14">
+              <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.</p>
+              <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nis. </p>
+              <p class="review__house">Изготовление каркасного <br> дома с балконом</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review__wrapper">
+              <h3 class="review__title">Отзывы</h3>
+              <h4 class="review__name">Джон Джон Джон</h4>
+              <img class="review__stars" src="img/review/five-stars.png" alt="5 звезд" width="70" height="14">
+              <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.</p>
+              <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nis. </p>
+              <p class="review__house">Изготовление каркасного <br> дома с балконом</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review__wrapper">
+              <h3 class="review__title">Отзывы</h3>
+              <h4 class="review__name">Джон Джон Джон</h4>
+              <img class="review__stars" src="img/review/five-stars.png" alt="5 звезд" width="70" height="14">
+              <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nis. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.</p>
+              <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nis. </p>
+              <p class="review__house">Изготовление каркасного <br> дома с балконом</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review__pagination">
+          <button class="review__pagination-button review__pagination-prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="review__pagination-button review__pagination-next" type="button">
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
+        </div>
+      </div>
+
+    </section>
+    <section class="main-contacts">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33800.592368387355!2d37.43079207733516!3d55.45673207410071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ba531615355a355!2zNTXCsDI4JzE2LjQiTiAzN8KwMjYnMTkuMiJF!5e0!3m2!1sru!2sru!4v1670246614056!5m2!1sru!2sru"
+        width="375" height="1550" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <div class="main-contacts__wrapper">
+        <h3 class="main-contacts__title">
+          Контакты
+        </h3>
+        <h4 class="main-contacts__address-title">
+          Адрес:
+        </h4>
+        <p class="main-contacts__address-text">Моск.обл. г.Ступино ул.Промышленная (200м от завода "Изомин")</p>
+        <p class="main-contacts__address-worktime">Пн-Сб 9:00-18:00, Вс - выходной</p>
+        <h4 class="main-contacts__contacts">
+          Контакты:
+        </h4>
+        <div class="main-contacts__tel">
+          <a class="main-contacts__tel-number" href="tel:+1234567890">+7 (495) 123-12-12</a>
+          <a class="main-contacts__tel-number" href="tel:+1234567890">+7 (495) 123-12-12</a>
+        </div>
+        <p class="main-contacts__email">
+          <a href="mailto:loremipsum@1.bk">loremipsum@1.bk</a>
+        </p>
+        <section class="main-navigation__social social">
+          <ul class="social__list reset-list">
+            <li class="social__item reset-item">
+              <a href="#" class="social__item-youtube">
+                <img src="./img/social/youtube.png" alt="youtube" class="social__item-youtube__img">
+              </a>
+              <span class="visually-hidden">Мы в Ютубе</span>
             </li>
-            <li class="offers-radio-button__item reset-item">
-              <label class="offers-radio-button__control">
-                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
-                  value="true" /><span class="offers-radio-button__control-mark"></span>
-                <span class="offers-radio-button__control-program">Бани</span>
-              </label>
+            <li class="social__item reset-item">
+              <a href="#" class="social__item-instagram">
+                <img src="./img/social/instagram.png" alt="instagram" class="social__item-instagram__img">
+              </a>
+              <span class="visually-hidden">Мы в Инстаграме</span>
             </li>
-            <li class="offers-radio-button__item reset-item">
-              <label class="offers-radio-button__control">
-                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
-                  value="true" /><span class="offers-radio-button__control-mark"></span>
-                <span class="offers-radio-button__control-program">Беседки</span>
-              </label>
+            <li class="social__item reset-item"> <a href="#" class="social__item-vk">
+                <img src="./img/social/vk.png" alt="vk" class="social__item-vk__img">
+              </a>
+              <span class="visually-hidden">Мы в ВК</span>
             </li>
-            <li class="offers-radio-button__item reset-item">
-              <label class="offers-radio-button__control">
-                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
-                  value="true" /><span class="offers-radio-button__control-mark"></span>
-                <span class="offers-radio-button__control-program">Бытовки</span>
-              </label>
+            <li class="social__item reset-item"> <a href="#" class="social__item-whatsapp">
+                <img src="./img/social/whatsapp.png" alt="whatsapp" class="social__item-whatsapp__img">
+              </a>
+              <span class="visually-hidden">Мы в Ватсапе</span>
             </li>
-            <li class="offers-radio-button__item reset-item">
-              <label class="offers-radio-button__control">
-                <input class="offers-radio-button__control-input visually-hidden" type="radio" name="house-group"
-                  value="true" /><span class="offers-radio-button__control-mark"></span>
-                <span class="offers-radio-button__control-program">Хоз. постройки</span>
-              </label>
+            <li class="social__item reset-item"> <a href="#" class="social__item-telegram">
+                <img src="./img/social/telegram.png" alt="telegram" class="social__item-telegram__img">
+              </a>
+              <span class="visually-hidden">Мы в Телеграме</span>
             </li>
           </ul>
-        </fieldset>
-      </form>
+        </section>
+        <div class="main-contacts__question">
+          <a href="#" class="main-contacts__button">Задать вопрос</a>
+        </div>
+      </div>
+
     </section>
   </main>
+  <footer class="main-footer footer">
+    <div class="footer__contacts">
+      <p class="footer__email">Пишите нам:
+        <a href="mailto:loremipsum@1.bk">loremipsum@1.bk</a>
+      </p>
+      <p class="footer__address-text">Моск.обл. г.Ступино ул.Промышленная (200м от завода "Изомин")</p>
+      <p class="footer__address-worktime">Пн-Сб 9:00-18:00, Вс - выходной</p>
+      <div class="footer__tel">
+        <a class="footer__tel-number" href="tel:+1234567890">+7 (495) 123-12-12</a>
+        <a class="footer__tel-number" href="tel:+1234567890">+7 (495) 123-12-12</a>
+      </div>
+      <h3 class="footer__social">Мы в социальных сетях:</h3>
+      <ul class="social__list reset-list footer__list">
+        <li class="social__item reset-item">
+          <a href="#" class="social__item-youtube">
+            <img src="./img/social/youtube.png" alt="youtube" class="social__item-youtube__img">
+          </a>
+          <span class="visually-hidden">Мы в Ютубе</span>
+        </li>
+        <li class="social__item reset-item">
+          <a href="#" class="social__item-instagram">
+            <img src="./img/social/instagram.png" alt="instagram" class="social__item-instagram__img">
+          </a>
+          <span class="visually-hidden">Мы в Инстаграме</span>
+        </li>
+        <li class="social__item reset-item"> <a href="#" class="social__item-vk">
+            <img src="./img/social/vk.png" alt="vk" class="social__item-vk__img">
+          </a>
+          <span class="visually-hidden">Мы в ВК</span>
+        </li>
+        <li class="social__item reset-item"> <a href="#" class="social__item-whatsapp">
+            <img src="./img/social/whatsapp.png" alt="whatsapp" class="social__item-whatsapp__img">
+          </a>
+          <span class="visually-hidden">Мы в Ватсапе</span>
+        </li>
+        <li class="social__item reset-item"> <a href="#" class="social__item-telegram">
+            <img src="./img/social/telegram.png" alt="telegram" class="social__item-telegram__img">
+          </a>
+          <span class="visually-hidden">Мы в Телеграме</span>
+        </li>
+      </ul>
+      <div class="footer__button">
+        <a href="#" class="footer__button-link">Честный калькулятор беседок</a>
+        <a href="#" class="footer__button-link">Задать вопрос</a>
+      </div>
+    </div>
+    <div class="footer__menu">
+      <div class="footer__menu-wrapper">
+        <h4 class="footer__menu-title">Продукция</h4>
+        <ul class="footer__menu-list reset-list">
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#"></a>
+            Каркасные дома
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Модульные дома</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Баня "под ключ"</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Беседки</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Бытовки (утепленные)</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Хоз. постройки (без
+              утепления)</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu-wrapper">
+        <h4 class="footer__menu-title">Комплектация</h4>
+        <ul class="footer__menu-list reset-list">
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Комплектация домов</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Комплектация бань</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Комплектация беседок</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Комплектация бытовок</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Комплектация хоз. построек</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu-wrapper">
+        <h4 class="footer__menu-title">Заказчику</h4>
+        <ul class="footer__menu-list reset-list">
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Индивидуальное строительство</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Фиксированные цены</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Дистанционное оформление договора</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Материнский капитал</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Порядок оплаты</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Процесс заказа</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu-wrapper">
+        <h4 class="footer__menu-title">Полезно</h4>
+        <ul class="footer__menu-list reset-list">
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Доставка и сборка</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Контакты</a>
+          </li>
+          <li class="footer__menu-item reset-item">
+            <a class="footer__menu-link" href="#">Наши работы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__documents">
+      <a class="footer__documents-link" href="">Политика конфиденциальности</a>
+      <a class="footer__documents-link" href="">Пользовательское соглашение</a>
+      <a class="footer__documents-link" href="">Cookies</a>
+      <p class="footer__copyright">Copyright © 2022.
+        <br>
+        Все права защищены.
+      </p>
+    </div>
+  </footer>
 
-
-
-  <script src="./js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/app.js" type="module"></script>
 </body>
 
 </html>

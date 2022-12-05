@@ -1,0 +1,14 @@
+.all-button {
+  display: inline-block;
+  margin: 0;
+  padding: 20px 45px 20px 55px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white-color;
+  background-color: $all-button;
+  border-radius: 30px;
+}

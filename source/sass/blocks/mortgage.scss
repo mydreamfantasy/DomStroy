@@ -1,0 +1,35 @@
+.main-mortgage {
+  position: relative;
+  padding-bottom: 508px;
+}
+
+.mortgage__text {
+  padding: 91px 28px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black-color;
+}
+
+.mortgage__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(241, 241, 246, 0.5);
+}
+
+.mortgage__image {
+  display: block;
+  margin: 0;
+  padding: 0;
+  opacity: 0.35;
+}
+
+.mortgage__link {
+  display: inline-block;
+  position: absolute;
+  bottom: 167px;
+  right: 26px;
+}

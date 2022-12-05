@@ -1,0 +1,18 @@
+.circle-button__link {
+  width: 135px;
+  height: 135px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid $request;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.circle-button__text {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 37%;
+  color: $menu-text;
+}

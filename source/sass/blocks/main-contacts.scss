@@ -1,0 +1,110 @@
+.main-contacts {
+  position: relative;
+}
+
+.main-contacts__wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6.5px);
+  border-radius: 20px 20px 0 0;
+}
+
+.main-contacts__title {
+  margin: 73px auto 39px 30px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+
+.main-contacts__address-title,
+.main-contacts__address-text,
+.main-contacts__address-worktime,
+.main-contacts__contacts,
+.main-contacts__tel,
+.main-contacts__email {
+  padding: 0;
+  margin: 0;
+  margin-left: 31px;
+}
+
+.main-contacts__address-title {
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.main-contacts__address-text {
+  padding-bottom: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.main-contacts__address-worktime {
+  padding-bottom: 46px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.main-contacts__contacts {
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.main-contacts__tel {
+  display: flex;
+  padding-bottom: 40px;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.main-contacts__tel-number,
+.main-contacts__email {
+  display: block;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $black-color;
+}
+
+.main-contacts__email {
+  padding-bottom: 20px;
+
+  a {
+    text-decoration: none;
+    color: $black-color;
+  }
+}
+
+.main-contacts__question {
+  margin: 90px 0 90px 38px;
+  padding: 0;
+}
+
+.main-contacts__button {
+  display: inline-block;
+  padding: 20px 79px;
+  color: $menu-text;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  background: $radio-checked;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
