@@ -1,11 +1,15 @@
-.swiper {
+.swiper-first {
+  width: 100%;
   overflow: hidden;
-  min-width: 348px;
   padding-bottom: 46px;
+}
+
+.swiper-second {
+  width: 100%;
 }
 
 .swiper-slide {
   display: flex;
-  width: 1000%;
+  justify-content: center;
   gap: 10px;
 }
